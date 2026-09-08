@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1220" />
+    <title>تکویکس | ابزارهای آنلاین کاربردی</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#/home" aria-label="صفحه اصلی تکویکس"><span class="brand-mark">T</span> تکویکس</a>
+      <nav aria-label="ناوبری اصلی">
+        <a data-route-link href="#/home">خانه</a>
+        <a data-route-link href="#/tools">ابزارها</a>
+        <a data-route-link href="#/about">درباره ما</a>
+      </nav>
+      <a class="header-action" href="#/tools">مشاهده ابزارها <span>←</span></a>
+    </header>
+
+    <main>
+      <section class="page active" data-page="home">
+        <div class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">ساده، سریع و همیشه در دسترس</p>
+            <h1>همه ابزارهای روزمره‌ات،<br /><em>یک‌جا.</em></h1>
+            <p class="hero-text">تکویکس مجموعه‌ای از ابزارهای آنلاین کاربردی است که کارهای کوچک دیجیتال را در چند ثانیه برایت انجام می‌دهد.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="#/tools">برو به ابزارها <span>←</span></a>
+              <a class="button secondary" href="#/about">بیشتر بدانید</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="glow"></div>
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="tool-card card-top"><span class="icon purple">⌘</span><div><b>تبدیل متن</b><small>در یک چشم‌به‌هم‌زدن</small></div></div>
+            <div class="tool-card card-bottom"><span class="icon yellow">✦</span><div><b>ابزارهای هوشمند</b><small>برای کارهای روزانه</small></div></div>
+            <div class="center-dot">+</div>
+          </div>
+        </div>
+        <section class="features" aria-label="ویژگی‌ها">
+          <article><span>01</span><h2>بدون پیچیدگی</h2><p>ابزارها با یک رابط ساده طراحی شده‌اند تا مستقیم به نتیجه برسی.</p></article>
+          <article><span>02</span><h2>همیشه رایگان</h2><p>برای استفاده از ابزارهای پایه، هیچ حسابی لازم نیست.</p></article>
+          <article><span>03</span><h2>سریع و امن</h2><p>کارهای تو در مرورگر انجام می‌شوند؛ ساده و با خیال راحت.</p></article>
+        </section>
+      </section>
+
+      <section class="page" data-page="tools">
+        <div class="page-intro"><p class="eyebrow">فضای ابزارهای تکویکس</p><h1>ابزار مناسب کارت را انتخاب کن.</h1><p>هر ابزار در صفحه‌ی خودش باز می‌شود تا بدون شلوغی روی کاری که داری تمرکز کنی.</p></div>
+        <div class="tools-grid">
+          <a class="tool-item" href="#/tool/text"><span class="icon purple">T</span><h2>تبدیل متن</h2><p>تغییر حروف، شمارش واژه‌ها و مرتب‌سازی متن.</p><b>باز کردن ←</b></a>
+          <a class="tool-item" href="#/tool/image"><span class="icon orange">▧</span><h2>ابزار تصویر</h2><p>تغییر اندازه و بهینه‌سازی سریع تصویرها.</p><b>باز کردن ←</b></a>
+          <a class="tool-item" href="#/tool/time"><span class="icon blue">◷</span><h2>زمان و تاریخ</h2><p>محاسبه فاصله بین تاریخ‌ها و تبدیل زمان.</p><b>باز کردن ←</b></a>
+          <a class="tool-item" href="#/tool/code"><span class="icon green">&lt;/&gt;</span><h2>ابزار کد</h2><p>مرتب‌سازی و بررسی سریع قطعه‌کدها.</p><b>باز کردن ←</b></a>
+        </div>
+      </section>
+
+      <section class="page tool-page" data-page="tool">
+        <a class="back-link" href="#/tools">→ بازگشت به همه ابزارها</a>
+        <div class="single-tool"><span class="icon purple" id="single-icon">T</span><p class="eyebrow">ابزار تکویکس</p><h1 id="tool-title">تبدیل متن</h1><p id="tool-description">متنت را وارد کن تا آماده‌ی کار شود.</p><textarea id="tool-input" placeholder="متن خود را اینجا بنویسید…"></textarea><div class="tool-actions"><button id="clear-button" type="button">پاک کردن</button><button class="button primary" id="copy-button" type="button">کپی متن</button></div></div>
+      </section>
+
+      <section class="page about" data-page="about">
+        <p class="eyebrow">درباره تکویکس</p><h1>ابزارهای خوب،<br /><em>کارهای ساده‌تر.</em></h1><p>ما تکویکس را ساختیم تا برای کارهای کوچک اما پرتکرار، لازم نباشد بین سایت‌ها و اپ‌های مختلف جابه‌جا شوی.</p><a class="button primary" href="#/tools">دیدن ابزارها <span>←</span></a>
+      </section>
+    </main>
+    <footer><span>© ۱۴۰۵ تکویکس</span><a href="#/home">بازگشت به خانه ↑</a></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
